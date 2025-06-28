@@ -1,8 +1,13 @@
 {
   "buildCommand": "pnpm install && pnpm build",
-  "outputDirectory": "dist",
   "installCommand": "pnpm install",
+  "outputDirectory": "dist",
   "devCommand": "pnpm dev",
+  "functions": {
+    "index.js": {
+      "runtime": "@vercel/node@3.0.0"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
